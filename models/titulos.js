@@ -22,3 +22,5 @@ const TituloSchema = new mongoose.Schema({
         trim: true
     },
 });
+
+module.exports = {titulos}
