@@ -1,4 +1,4 @@
-import { pelisService } from "../service/pelisService";
+const { pelisService } = require('../service/pelisService');
 
 const pelisController = {
     async createPelis(req, res){
