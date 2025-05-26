@@ -11,6 +11,11 @@ class pelisService{
 
     async getPelis(){
         const pelis = await pelisModel.find();
+        if(pelis.length === 0) {
+            return {message: 'No hay peliculas disponibles'};
+        }else{
+            return pelis;
+        }
     }
 }
 
