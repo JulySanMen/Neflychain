@@ -7,7 +7,7 @@ class pelisService{
             titulo, descripcion, duracion, path
         });
         return await newPeli.save();
-    }
+    } 
 
     async getPelis(){
         const pelis = await pelisModel.find();
