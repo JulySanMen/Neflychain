@@ -5,6 +5,6 @@ const pelisModel = new mongoose.Schema({
    descripcion:{type:String, required:true},
    duracion:{type:String, required:true},
    path:{type:String, required:true}
-});
+}); 
 
 module.exports = {pelisModel};
