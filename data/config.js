@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const connectDB = async()=>{
     const url = 'mongodb://nf_gael:nf_123@localhost:27019/NEFLYCHAIN?authSource=NEFLYCHAIN';
-    try{
+    try{  
         await mongoose.connect(url);
         console.log('Conmectado a la Base de Datos <3');
     }catch(err){
