@@ -1,4 +1,4 @@
-const { get } = require('mongoose');
+const { get } = require('mongoose'); 
 const {pelisModel} = require('../models/pelisModel');
 
 class pelisService{
