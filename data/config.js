@@ -9,5 +9,4 @@ const connectDB = async()=>{
         console.error('Error al conecatse a la Base de Datos </3' + err);
     }
 }
-
 module.exports = connectDB;
