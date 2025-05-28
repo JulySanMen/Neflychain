@@ -5,7 +5,7 @@ class pelisController {
         const {titulo, descripcion, duracion, path} = req.body;
         const savePeli = await pelisService.createPelis(titulo, descripcion, duracion, path);
         res.json(savePeli)
-    }
+    } 
 
     async getPelis(req, res){
         try{
