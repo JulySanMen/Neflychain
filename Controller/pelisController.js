@@ -16,5 +16,4 @@ class pelisController {
         }
     }
 }
-
 module.exports = {pelisController};
