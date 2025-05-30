@@ -7,7 +7,7 @@ const connectDB = require('./data/config');
 const PORT = 3000;
 app.use(cors());
 app.use(express.json());
-app.use('/crear', pelisRoutes);
+app.use('/pelis', pelisRoutes);
 connectDB()
 
 app.listen(PORT, ()=>{
