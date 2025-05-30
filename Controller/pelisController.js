@@ -21,7 +21,7 @@ class pelisController {
             const peli = await pelisService.filterPelis(titulo);
             res.json(peli);
         }catch(err){
-
+            res.status(404).json({error: err.message});
         }
     }
 }
