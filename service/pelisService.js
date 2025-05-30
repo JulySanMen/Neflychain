@@ -20,7 +20,9 @@ class pelisService{
     static async filterPelis(tiulo){
         const pelis = await pelisModel.findOne({titulo : titulo});
         if(!pelis){
-            throw new Error('No se encontro el titulo de la pelicula vayase a cuevana')
+            throw new Error('No se encontro el titulo de la pelicula vayase a cuevana');
+        }else{
+            return pelis;
         }
     }
 }
