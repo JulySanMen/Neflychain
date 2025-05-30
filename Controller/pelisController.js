@@ -1,4 +1,4 @@
-const { pelisService } = require('../service/pelisService');
+const { pelisService, createPelis } = require('../service/pelisService');
 
 class pelisController {
     async createPelis(req, res){
@@ -16,4 +16,4 @@ class pelisController {
         }
     }
 }
-module.exports = {};
+module.exports = {createPelis, getPelis};
