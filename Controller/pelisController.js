@@ -15,5 +15,14 @@ class pelisController {
             res.status(500).json({error: err.message});
         }
     }
+    static async filterPelis(req, res){
+        const {titulo} = req.body;
+        try{
+            const peli = await pelisService.filterPelis(titulo);
+            res.json(peli);
+        }catch(err){
+
+        }
+    }
 }
 module.exports = {pelisController};
