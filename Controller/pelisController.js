@@ -1,13 +1,13 @@
-const { pelisService, createPelis } = require('../service/pelisService');
+const { pelisService } = require('../service/pelisService');
 
 class pelisController {
-    async createPelis(req, res){
+    static async createPelis(req, res){
         const {titulo, descripcion, duracion, path} = req.body; 
         const savePeli = await pelisService.createPelis(titulo, descripcion, duracion, path);
         res.json(savePeli)
     } 
 
-    async getPelis(req, res){
+    static async getPelis(req, res){
         try{
             const pelis = await pelisService.getPelis();
             res.json(pelis);
@@ -16,4 +16,4 @@ class pelisController {
         }
     }
 }
-module.exports = {createPelis, getPelis};
+module.exports = {pelisController};
