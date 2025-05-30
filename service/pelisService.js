@@ -17,6 +17,12 @@ class pelisService{
             return pelis;
         }
     }
+    static async filterPelis(tiulo){
+        const pelis = await pelisModel.findOne({titulo : titulo});
+        if(!pelis){
+            throw new Error('No se encontro el titulo de la pelicula vayase a cuevana')
+        }
+    }
 }
 
 module.exports = {pelisService}; 
