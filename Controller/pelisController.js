@@ -16,4 +16,4 @@ class pelisController {
         }
     }
 }
-module.exports = {pelisController};
+module.exports = {};

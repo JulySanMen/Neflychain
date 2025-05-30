@@ -19,4 +19,4 @@ class pelisService{
     }
 }
 
-module.exports = {pelisService}; 
+module.exports = {createPelis,getPelis}; 
