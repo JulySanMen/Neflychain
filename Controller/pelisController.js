@@ -2,8 +2,8 @@ const { pelisService } = require('../service/pelisService');
 
 class pelisController {
     static async createPelis(req, res){
-        const {titulo, descripcion, duracion, path} = req.body; 
-        const savePeli = await pelisService.createPelis(titulo, descripcion, duracion, path);
+        const {titulo, descripcion, duracion, path, image} = req.body; 
+        const savePeli = await pelisService.createPelis(titulo, descripcion, duracion, path,image);
         res.json(savePeli)
     } 
 
