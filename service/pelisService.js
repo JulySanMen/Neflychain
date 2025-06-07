@@ -2,9 +2,9 @@ const { get } = require('mongoose');
 const {pelisModel} = require('../models/pelisModel');
 
 class pelisService{
-    static async createPelis(titulo, descripcion, duracion, path){
+    static async createPelis(titulo, descripcion, duracion, path,image){
         const newPeli = new pelisModel({
-            titulo, descripcion, duracion, path
+            titulo, descripcion, duracion, path, image
         });
         return await newPeli.save();
     } 
